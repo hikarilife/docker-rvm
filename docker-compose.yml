@@ -1,0 +1,12 @@
+version: '3.6'
+
+services:
+  ruby:
+    build:
+      context: .
+      args:
+        - Ruby_PASS=${Ruby_PASS}
+    volumes:
+      - '.:/usr/src/app'
+    stdin_open: true
+    tty: true
