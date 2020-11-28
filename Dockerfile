@@ -13,11 +13,8 @@ RUN apt update && DEBIAN_FRONTEND=noninteractive apt install -y \
   patch \
   gawk \
   g++ \
-#  gcc \
   autoconf \
-#  automake \
   bison \
-#  libc6-dev \
   libffi-dev \
   libgdbm-dev \
   libncurses5-dev \
