@@ -1,11 +1,11 @@
 version: '3.6'
 
 services:
-  ruby:
+  rvm:
     build:
       context: .
       args:
-        - Ruby_PASS=${Ruby_PASS}
+        - RVM_PASS=${RVM_PASS}
     volumes:
       - '.:/usr/src/app'
     stdin_open: true
