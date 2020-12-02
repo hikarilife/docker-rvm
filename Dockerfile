@@ -5,6 +5,7 @@ ARG RVM_PASS
 # DEBIAN_FRONTEND=noninteractive for interactive packages install
 RUN apt update && DEBIAN_FRONTEND=noninteractive apt install -y \
   sudo \
+  git \
   # for rvm user
   openssl \
   # to install rvm
@@ -43,6 +44,7 @@ RUN gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E206
 # install ruby version which you want
   rvm install 2.5.1 && \
   rvm install 2.6.6 && \
-  rvm install 2.7.2
+  rvm install 2.7.2 && \
+  rvm --default use 2.7.2
 
 CMD ["/bin/bash"]
