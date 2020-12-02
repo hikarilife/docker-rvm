@@ -27,5 +27,5 @@ docker-compose up -d --build
 コンテナに入ります。  
 Enter running container with the following command:
 ```
-docker exec -it <container> bash --login
+docker exec -it <container> bash -l
 ```
